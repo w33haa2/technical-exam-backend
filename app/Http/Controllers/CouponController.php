@@ -79,7 +79,7 @@ class CouponController extends Controller
      * @param  [string] per_page
      * @return [string] message
      */
-    public function menuTypes(Request $request)
+    public function coupons(Request $request)
     {
         if(count($request->all()) > 0) {
             $coupon = Coupon::paginate(intval($request->per_page));

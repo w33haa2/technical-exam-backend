@@ -88,7 +88,7 @@ class CouponController extends Controller
         }
         return response()->json([
             'message' => "Successfully fetched coupon",
-            'meta' => $menuType
+            'meta' => $coupon
         ], 200);
     }
 }
